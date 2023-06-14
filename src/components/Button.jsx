@@ -1,9 +1,12 @@
-// import { useNavigate } from "react-router-dom";
-
 export const Button = (Props) => {
+  const url = Props.url;
+
   return (
     <>
       <button
+        onClick={() => {
+          window.open(url, "_blank");
+        }}
         className=" 
           shadow-lg
           flex 
